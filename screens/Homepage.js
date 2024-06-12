@@ -54,7 +54,7 @@ class HomePage extends React.Component {
       formData.append("email", this.state.email);
 
 
-      fetch('http://jdevalik.fr/api/drine/insertPlayerBjl.php', {
+      fetch('http://AdresseApi/drine/insertPlayerBjl.php', {
         method: 'POST',
         body: formData,
         headers: {
@@ -112,7 +112,7 @@ class HomePage extends React.Component {
       formData.append("firstname", this.state.firstname);
       formData.append("email", this.state.email);
 
-      fetch('http://jdevalik.fr/api/drine/getPlayerBjl.php', {
+      fetch('http://AdresseApi/drine/getPlayerBjl.php', {
         method: 'POST',
         body: formData,
         headers: {

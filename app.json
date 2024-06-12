@@ -21,10 +21,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.psylook.bejeweledPsy",
+      "config": {
+        "usesCleartextTraffic": true
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c165ef19-1434-488c-b819-5716dd622594"
+      }
     }
   }
 }

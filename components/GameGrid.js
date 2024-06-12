@@ -334,8 +334,7 @@ class GameGrid extends React.Component {
     calculateScore(scoreSequence) {
         const { score, level } = this.state;
         //console.log("score dans gamegrid: " + score)
-        const updateScore = scoreSequence * level;
-        const newScore = score + updateScore;
+        const newScore = score + scoreSequence;
 
         this.setState({ score: newScore });
         this.calculateLvl(newScore);

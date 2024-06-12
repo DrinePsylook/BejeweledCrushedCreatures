@@ -121,7 +121,7 @@ class Game extends React.Component {
 
 
     changeProgressBar() {
-        this.interval = setInterval(this.calculateProgress.bind(this), 3000);
+        this.interval = setInterval(this.calculateProgress.bind(this), 1000);
     }
 
     saveScore() {
@@ -129,7 +129,7 @@ class Game extends React.Component {
         formData.append("score", this.state.scores);
         formData.append("player", this.state.id);
 
-        fetch('http://jdevalik.fr/api/drine/insertScore.php', {
+        fetch('http://AdresseApi/drine/insertScore.php', {
             method: 'POST',
             body: formData,
             headers: {
@@ -154,7 +154,7 @@ class Game extends React.Component {
     insertScore() {
         const formData = new FormData();
         formData.append("score", 1);
-        fetch('http://jdevalik.fr/api/drine/getBestScoreBej.php', {
+        fetch('http://AdresseApi/drine/getBestScoreBej.php', {
             method: 'POST', //Request Type
             body: formData, //post data
             headers: {
